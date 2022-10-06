@@ -12,19 +12,21 @@ html,body{
 .title{
     text-align: center;
     padding: 30px;
+    margin: auto;
+    width: 63%;
 }
 
 .title h3{
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 600;
     color: #dc4f72;
     line-height: 10px;
 }
 
 .title h2{
-    font-size: 55px;
-    font-weight: 700;
-    color: black;
+    font-size: 47px;
+    font-weight: 600;
+    color: #2c3038;
     line-height: 50px;
 }
 
@@ -33,4 +35,38 @@ html,body{
     font-weight: 400;
     color: #5a5a5a;
     line-height: 30px;
+}
+
+/* TOOLS */
+.tools__content{
+    margin: auto;
+    width: 70%;
+}
+
+.tools__item{
+    background: #F7F9FC;
+    padding: 30px 45px;
+    border-radius: 12px;
+    transform: translateY(0);
+    transition: 0.5s;
+}
+
+.tools__item:hover{
+    transform: translateY(-20px);
+    transition:; 0.5s
+}
+
+.tools__item img{
+    max-width: 100%;
+    padding-top: 30px;
+}
+
+.tools__item h3{
+    font-weight: 600;
+    font-size: 28px;
+}
+
+.tools__item p{
+    color: #5a5a5a;
+    font-size: 14px;
 }
