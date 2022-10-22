@@ -26,16 +26,34 @@ html,body{
 .title h2{
     font-size: 47px;
     font-weight: 600;
-    color: #2c3038;
+    color: black;
+    line-height: 50px;
+}
+
+.dark .title h2
+{
+    font-size: 47px;
+    font-weight: 600;
+    color: white;
     line-height: 50px;
 }
 
 .title p{
     font-size: 16px;
     font-weight: 400;
-    color: #5a5a5a;
+    color: black;
     line-height: 30px;
 }
+
+.dark .title p
+{
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    line-height: 30px;
+}
+
+
 
 .themeButton{
     display: inline-block;
@@ -105,8 +123,10 @@ html,body{
 
 /* ABOUT US */
 
-.aboutUs{
-    background-color: #f7f9fc;
+.title__left {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 10px;
 }
 
 .title__left h3{
@@ -182,6 +202,152 @@ html,body{
     color: #5a5a5a;
 }
 
+/* HEADER */
+.dark header{
+    background-color: black;
+    padding: 0px;
+    transition: all 0.4s;
+    height: 60px;
+    display: grid;
+    align-items: center;
+    box-shadow: 0 3px 9px rgb(0 0 0 / 5%);
+}
+
+header{
+    background-color: white;
+    padding: 0px;
+    transition: all 0.4s;
+    height: 60px;
+    display: grid;
+    align-items: center;
+    box-shadow: 0 3px 9px rgb(0 0 0 / 5%);
+}
+
+.fixed-top{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 2000;
+}
+
+.navbar .navbar-brand {
+    font-size: 26px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #dc4f72;
+    letter-spacing: -1px;
+}
+
+.navbar .navbar-brand span.fa {
+    display: inline-block;
+    color: #dc4f72;
+}
+
+.navbar-expand-lg .navbar-nav .nav-item {
+    padding: 0 15px;
+    transition: all 0.5s;
+    position: relative;
+}
+
+nav ul li{
+    display: inline-block;
+}
+
+li{
+    list-style: none;
+}
+.navbar-expand-lg .navbar-nav .nav-item.active .nav-link {
+    color: #dc4f72;
+}
+
+.dark .navbar-expand-lg .navbar-nav .nav-link {
+    text-transform: capitalize;
+    transition: all 0.5s ease;
+    padding: 14px 0;
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    text-transform: capitalize;
+    transition: all 0.5s ease;
+    padding: 14px 0;
+    font-size: 16px;
+    font-weight: 400;
+    color: #2c3038;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:hover {
+    color: #dc4f72;
+}
+
+#portNavbar li{
+    font-size: 20px;
+}
+
+.dropdown-menu:hover{
+    color: black;
+}
+
+
+/* Trước hover */
+#navbarTogglerDemo02 .nav-item::after {
+    content: "";
+
+    width: 0;
+    height: 3px;
+    display: block;
+
+    background-color: #dc4f72;
+    transition: all .5s;
+}
+
+/* Sau hover */
+
+/* #navbarTogglerDemo02 .nav-item{
+    padding: 0 10px;
+} */
+
+#navbarTogglerDemo02 .nav-item .nav-link{
+    color: black;
+    transition: all .5s;
+}
+
+.dark #navbarTogglerDemo02 .nav-item .nav-link{
+    color: white;
+    transition: all .5s;
+}
+
+#navbarTogglerDemo02 .nav-item:hover::after{
+    width: 50%;
+}
+
+#navbarTogglerDemo02 .nav-item:hover .nav-link{
+    color:#dc4f72;
+}
+
+#navbarTogglerDemo02 .nav-item .dropdown-menu a:hover{
+    color:#dc4f72;
+}
+
+#navbarTogglerDemo02 .nav-item.active .nav-link{
+    color: #dc4f72; 
+}
+
+nav ul li a, nav ul li a:after, nav ul li a:before {
+    transition: all .5s;
+}
+
+.nav-item .btn__outline__primary:hover{
+    background-color:#dc4f72 ;
+    color: white;
+    transition: all 0.4s;
+}
+
+
+
 /* COMMIT */
 
 .commit{
@@ -222,6 +388,10 @@ html,body{
 
 .general{
     background-color: #f7f9fc;
+}
+
+.dark .general{
+    background-color: black;
 }
 
 .right__list ul{
@@ -351,10 +521,24 @@ html,body{
 /* FOOTER */
 
 .footer__content{
-    background-color: #f7f9fc;
+    background-color: white;
+    color: black;
 }
 
-.item__left .mainitem__left h3{
+.dark .footer__content{
+    background-color: black;
+}
+
+
+.dark .item__left .mainitem__left h3{
+    font-size: 20px;
+    line-height: 25px;
+    color: white;
+    margin-bottom: 30px;
+    font-weight: 700;
+
+}
+ .item__left .mainitem__left h3{
     font-size: 20px;
     line-height: 25px;
     color: #2c3038;
@@ -368,6 +552,16 @@ html,body{
     list-style: none;
     margin: 10px 0;
 
+}
+
+.dark .item__left .mainitem__left li a{
+    color: white;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 25px;
+    padding: 0;
+    text-transform: capitalize;
+    text-decoration: none;
 }
 
 .item__left .mainitem__left li a{
@@ -384,6 +578,14 @@ html,body{
     color: #dc4f72;
     opacity: 0.7;
     transition: all 0.7s;
+}
+
+.dark .item__right h3{
+    font-size: 20px;
+    line-height: 25px;
+    color: white;
+    margin-bottom: 30px;
+    font-weight: 700;
 }
 
 .item__right h3{
@@ -446,15 +648,16 @@ html,body{
     border-top: 1px solid #eaeaea;
 }
 
+.dark .footer__itembottom .bottom__left p{
+    line-height: 22px;
+    color: white;
+    font-size: 16px;
+}
+
 .footer__itembottom .bottom__left p{
     line-height: 22px;
     color: #5a5a5a;
     font-size: 16px;
-}
-
-.footer__itembottom .bottom__left a{
-    color: #2c3038;
-    text-decoration: none;
 }
 
 .footer__itembottom .bottom__left a:hover{
@@ -466,6 +669,29 @@ html,body{
     display: inline-block;
     margin-right: 5px;
     list-style: none;
+}
+
+
+.dark .footer__itembottom .bottom__left a{
+    color: white;
+    text-decoration: none;
+}
+
+.footer__itembottom .bottom__left a{
+    color: #2c3038;
+    text-decoration: none;
+}
+
+.dark .footer__itembottom .bottom__right li a{
+    color:white;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    display: inline-block;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 15px;
+    line-height: 36px;
 }
 
 .footer__itembottom .bottom__right li a{
@@ -485,4 +711,33 @@ html,body{
     transition: all 0.5s;
 }
 
-
+/* (LIGHT - DARK) THEME  */
+#myBody{
+    background-color:white;
+  }
+  #switchButton {
+    background-color: black;
+  }
+  #switchButton .fa-sun {
+    display: none;
+  }
+  #switchButton .fa-moon {
+    display: block;
+    color: white;
+  }
+  
+  /* Dark Theme*/
+  .dark#myBody{
+    background-color:black;
+  }
+  .dark #switchButton {
+    background-color: white;
+  }
+  .dark #switchButton .fa-sun {
+    display: block;
+  }
+  
+  .dark #switchButton .fa-moon {
+    display: none;
+    color: white;
+  }

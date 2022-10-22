@@ -25,8 +25,59 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body>
-    <header></header>
+<body id="myBody">
+    <header id="site-header" class="fixed-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg stroke">
+                <a class="navbar-brand">
+                    <span class="fa fa-regular fa-handshake"></span> Masterwork</a>
+                <button class="navbar-toggler  collapsed bg-gradient" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+                    aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+                    <span class="navbar-toggler-icon fa icon-close fa-times"></span>
+                    </span>
+                </button>
+    
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">Services</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                Pages <span class="fa fa-angle-down"></span>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item">Blog posts</a>
+                                <a class="dropdown-item">Blog single</a>
+                                <a class="dropdown-item">Landing page</a>
+                            </div>
+                        </li>
+                        <li class="nav-item @@contact-active">
+                            <a class="nav-link">Contact</a>
+                        </li>
+                        <li>
+                            <button class="btn mt-2" id="switchButton"  title="Click to switch theme">
+                                <i class="far fa-moon"></i>
+                                <i class="far fa-sun"></i>
+                              </button>
+                        </li>
+                        <li class="nav-item ml-lg-3 ml-0 mt-lg-0 mt-3">
+                            <a class="btn btn__outline__primary themeButton">Schedule a Demo</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
 
     <section class="carousel"></section>
 
@@ -377,6 +428,7 @@
         integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+
     <!-- Countup -->
     <script src="./js/jquery.countup.js"></script>
 
@@ -386,6 +438,8 @@
         $('.counter').countUp();
     </script>
 
+    <!-- Theme JS -->
+    <script src="./js/theme.js"></script>
     <!-- Thư viện BOOTSTRAP -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
